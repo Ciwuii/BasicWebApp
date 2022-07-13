@@ -12,8 +12,14 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
-           return "MyTeam";
-        } else { // TODO extend the programm here
+           return "Suchen sie mich nicht das greift meinen Datenschutz an";
+        } else if (query.contains("suck") || query.contains("dumb") || query.contains("smell") || query.contains("fuck u") || query.contains("stupid")) { // TODO extend the programm here
+            return "no u";
+        } else if (query.contains("warum")) {
+            return "weil";
+        }else if (query.contains("help")) {
+            return "no";
+        }else {
             return "";
         }
     }
