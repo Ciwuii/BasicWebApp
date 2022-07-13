@@ -39,7 +39,11 @@ public class QueryProcessor {
             String[] tmp2 = tmp.split(".");
             int tmp3 = 0;
             for(String st: tmp2){
-                tmp3 = tmp3 * Integer.parseInt(st);
+                int square = st * st;
+                int cube = st * st * st;
+                if (square == cube) {
+                    tmp3 = st;
+                }
             }
             return "tmp3";
         }else if (query.contains("largest")) {
