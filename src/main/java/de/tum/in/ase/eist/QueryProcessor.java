@@ -25,7 +25,18 @@ public class QueryProcessor {
                 tmp3 = tmp3 + parseInt(st);
             }
             return "tmp3";
-        }else {
+        }else if (query.contains("largest")) {
+            String tmp = query.replaceAll("[^0-9.]", "");
+            String[] tmp2 = tmp.split(".");
+            int tmp3 = 0;
+            for(String st: tmp2){
+                if(tmp3 < parseInt(st)){
+                    tmp3 = parseInt(st);
+                }
+            }
+            return "tmp3";
+        }
+        else {
             return "";
         }
     }
