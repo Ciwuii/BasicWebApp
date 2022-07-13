@@ -17,8 +17,8 @@ public class QueryProcessor {
             return "no u";
         } else if (query.contains("warum")) {
             return "weil";
-        }else if (query.contains("help")) {
-            return "no";
+        }else if (query.contains("what is your name")) {
+            return "Christoph";
         }else {
             return "";
         }
