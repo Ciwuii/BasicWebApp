@@ -55,7 +55,7 @@ public class QueryProcessor {
                     tmp3 = Integer.parseInt(st);
                 }
             }
-            return tmp3.toString();
+            return Integer.toString(tmp3);
         }
         else if (query.contains("banana")) {
 
