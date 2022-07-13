@@ -17,8 +17,14 @@ public class QueryProcessor {
             return "no u";
         } else if (query.contains("warum")) {
             return "weil";
-        }else if (query.contains("what is your name")) {
-            return "Christoph";
+        }else if (query.contains("plus")) {
+            String tmp = query.replaceAll("[^0-9.]", "");
+            String[] tmp2 = tmp.split(".");
+            int tmp3 = 0;
+            for(String st: tmp2){
+                tmp3 = tmp3 + parseInt(st);
+            }
+            return "tmp3";
         }else {
             return "";
         }
