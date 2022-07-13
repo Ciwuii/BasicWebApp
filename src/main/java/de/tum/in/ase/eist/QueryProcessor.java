@@ -25,6 +25,23 @@ public class QueryProcessor {
                 tmp3 = tmp3 + Integer.parseInt(st);
             }
             return "tmp3";
+        }else if (query.contains("multiplied")) {
+            String tmp = query.replaceAll("[^0-9.]", "");
+            String[] tmp2 = tmp.split(".");
+            int tmp3 = 0;
+            for(String st: tmp2){
+                tmp3 = tmp3 * Integer.parseInt(st);
+            }
+            return "tmp3";
+        }
+        else if (query.contains("both a square and a cube")) {
+            String tmp = query.replaceAll("[^0-9.]", "");
+            String[] tmp2 = tmp.split(".");
+            int tmp3 = 0;
+            for(String st: tmp2){
+                tmp3 = tmp3 * Integer.parseInt(st);
+            }
+            return "tmp3";
         }else if (query.contains("largest")) {
             String tmp = query.replaceAll("[^0-9.]", "");
             String[] tmp2 = tmp.split(".");
@@ -35,6 +52,10 @@ public class QueryProcessor {
                 }
             }
             return "tmp3";
+        }
+        else if (query.contains("banana")) {
+
+            return "yellow";
         }
         else {
             return "";
