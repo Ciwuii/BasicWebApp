@@ -22,7 +22,7 @@ public class QueryProcessor {
             String[] tmp2 = tmp.split(".");
             int tmp3 = 0;
             for(String st: tmp2){
-                tmp3 = tmp3 + parseInt(st);
+                tmp3 = tmp3 + Integer.parseInt(st);
             }
             return "tmp3";
         }else if (query.contains("largest")) {
@@ -30,8 +30,8 @@ public class QueryProcessor {
             String[] tmp2 = tmp.split(".");
             int tmp3 = 0;
             for(String st: tmp2){
-                if(tmp3 < parseInt(st)){
-                    tmp3 = parseInt(st);
+                if(tmp3 < Integer.parseInt(st)){
+                    tmp3 = Integer.parseInt(st);
                 }
             }
             return "tmp3";
@@ -40,4 +40,8 @@ public class QueryProcessor {
             return "";
         }
     }
+
+    // public static void main(String[] args) {
+    //     System.out.println(process("what is 26 + 3"));
+    // }
 }
